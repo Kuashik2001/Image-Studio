@@ -1,0 +1,197 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Protest Revolution', sans-serif;
+    
+}
+body{
+    background: rgb(41, 40, 40);
+}
+/*-----------------------Heading Image search-------------*/
+.image-generator
+{
+    
+    background: url("Images/Abstract-Gaming-Wallpapers-1080P-76-background-pictures.jpg") no-repeat center;
+    background-size: cover;
+    height: 75vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center ;
+    border-radius: 20px;
+    border-radius: 20px;
+
+}
+.image-generator::before
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+    
+}
+/*.image-generator:hover
+{
+    background-color: rgb(0, 0, 0);
+    opacity: 0.5;
+}*/
+.image-generator .content
+{
+    color: white;
+    padding: 0 17px;
+    max-width: 100%;
+    text-align: center;
+    position: relative;
+}
+.image-generator h1{
+    font-size: 4.5rem;
+    font-weight: 500;
+}
+.image-generator p
+{
+    font-size: 1.35rem;
+    margin-top: 0.5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/*.content .search
+{
+    /*height: 36px;
+    width: 45vw;
+    display: flex;
+    padding: 6px;
+    margin: 4vw 2vw 2vw;
+    margin-left: 2vh;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}*/
+.content .input-prompt
+{
+    width: 100%;
+    height: 42px;
+    font-size: 1.2rem;
+    outline: none;
+    border: none;
+    background: rgb(86, 85, 85);
+    padding: 0 23px;
+    border-radius: 20px;
+    margin: 45px 0 15px;
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.content .Image-quantity
+{
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    background: rgb(86, 85, 85);
+    border-radius: 20px;
+    margin: -5px 0 15px;
+}
+.content .generate-btn
+{
+    width:25%;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    padding: 2px;
+    background: rgb(86, 85, 85);
+    border-radius: 20px;
+    margin: 10px 0 15px;
+}
+.content .generate-btn:hover
+{
+    background-color: brown;
+}
+/*--------------------------------Download Images----------------------------------------------*/
+.image_gallery
+{
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 0 15px;
+    max-width: 1425px; /* 1250*/
+    margin: 50px auto;
+    justify-content: center;
+}
+.image_gallery .img_card
+{
+    width: 285px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.image_gallery .img_card img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image_gallery .img_card.loading img
+{
+    width: 80px;
+    height: 80px;
+}
+.image_gallery .img_card .download_btn
+{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background: #fff;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.image_gallery .img_card:not(.loading):hover .download_btn
+{
+    display: flex;
+}
+.image_gallery .img_card .download_btn img
+{
+    width: 14px;
+    height: 14px;
+}
+
+
+@media screen and (max-width: 760px) {
+    .image-generator {
+        height: auto;
+    }
+    .image-generator h1 {
+        font-size: 2rem;
+    }
+    .image-generator p {
+        font-size: 1rem;
+    }
+    .content .input-prompt {
+        width: 100%;
+    }
+    .content .Image-quantity,
+    .content .generate-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .image_gallery .img_card {
+        width: 100%;
+    }
+}
+/*--------------------------------*/
+
+    
